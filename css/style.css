@@ -1,5 +1,32 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
 .nav-link {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    width: 100%;
+}
+
+.header span {
+    font-weight: bold;
+    background-color: #FFFF00;
 }
