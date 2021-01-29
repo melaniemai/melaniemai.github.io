@@ -377,6 +377,9 @@ a:hover {
     margin-top: -2px;
     border-left: 2px solid #82909c;
     position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #5d6a75;
   }
   
   .experience .experience-item h4 {
@@ -399,6 +402,9 @@ a:hover {
   
   .experience .experience-item ul {
     padding-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #5d6a75;
   }
   
   .experience .experience-item ul li {
@@ -443,12 +449,32 @@ a:hover {
 
 .resume .description-box h4 {
     text-align: center;
-    margin-top: 15px;
-    padding-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    font-family: "Roboto", sans-serif;
+    color: #5d6a75;
 }
 
 .resume .description-box p {
     text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #5d6a75;
+}
+
+.resume .certifs {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.resume .certifs .card {
+    display: inline-block;
+}
+
+.resume .certifs .card .card-header {
+    font-weight: 500;
 }
 
 /*-------------- projects section ------------*/
@@ -459,6 +485,9 @@ a:hover {
 
 .projects .description-box {
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #5d6a75;
 }
 
 /*------------- involvenement section -----------*/
