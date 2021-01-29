@@ -13,7 +13,7 @@ h6 {
 }
 
 a {
-    color: #1e1e1e;
+    color: #0B6EFD;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
@@ -424,3 +424,20 @@ a:hover {
     background: #fff;
     border: 2px solid #82909c;
   }
+
+  /*------------ resume section --------------*/
+  .resume .description-box span {
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    color: #3b434a;
+    margin-left: 50px;
+}
+
+.resume .description-box .resume-btn {
+    margin: 20px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+}
