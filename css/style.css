@@ -433,11 +433,30 @@ a:hover {
     font-weight: 400;
     text-align: center;
     color: #3b434a;
-    margin-left: 50px;
 }
 
 .resume .description-box .resume-btn {
     margin: 20px 10px 10px 10px;
     padding: 20px 10px 10px 10px;
+    text-align: center;
+}
+
+.resume .description-box h4 {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.resume .description-box p {
+    text-align: justify;
+}
+
+/*-------------- projects section ------------*/
+
+.projects .description-box .card {
+    display: inline-block;
+}
+
+.projects .description-box {
     text-align: center;
 }
