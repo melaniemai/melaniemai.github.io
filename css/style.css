@@ -460,3 +460,13 @@ a:hover {
 .projects .description-box {
     text-align: center;
 }
+
+/*------------- involvenement section -----------*/
+
+.involvement .card-body ul {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #5d6a75;
+    text-align: justify;
+    list-style: none;
+}
