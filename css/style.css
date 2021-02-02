@@ -508,6 +508,10 @@ a:hover {
     list-style: none;
 }
 
+.involvement .card-body li {
+    list-style: none;
+}
+
 /*------------ reflection section --------------*/
 
 .reflection .description-box p {
