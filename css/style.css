@@ -356,7 +356,7 @@ a:hover {
 }
 
 .about .image {
-    background: url("/img/IMG_3180.png") center center no-repeat;
+    background: url("/img/website-pic.png") center center no-repeat;
     background-size: cover;
     min-height: 500px;
     border-radius: 4%;
@@ -496,10 +496,19 @@ a:hover {
 
 /*------------- involvenement section -----------*/
 
-.involvement .card-body ul {
+.involvement .card-body {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     color: #5d6a75;
     text-align: justify;
     list-style: none;
+}
+
+/*------------ reflection section --------------*/
+
+.reflection .description-box p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #5d6a75;
+    text-align: justify;
 }
