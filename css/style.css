@@ -302,6 +302,10 @@ a:hover {
     font-weight: bold;
 }
 
+.intro .intro-content .table-cell .scrolldown {
+    text-align: center;
+}
+
 /* ------ about --------*/
 .section-title {
     text-align: center;
@@ -511,4 +515,11 @@ a:hover {
     font-size: 15px;
     color: #5d6a75;
     text-align: justify;
+}
+
+/*---------- scroll up --------------------*/
+.reflection .scrollup {
+    color: #5d6a75;
+    text-align: center;
+
 }
