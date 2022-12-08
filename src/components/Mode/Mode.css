@@ -1,0 +1,39 @@
+.container-mode {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0.5rem;
+  justify-content: end;
+}
+
+.mode-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.mode-nav ul li {  
+  margin: 0 1.5rem;
+}
+
+.container-icon {
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  border: none;
+  background: #161b22;
+  border-radius: 10px;
+}
+
+.mode-icon {
+  color: #CDD0F3;
+  font-size: 20px;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+a:hover img {
+  transform: translateX(0);
+}

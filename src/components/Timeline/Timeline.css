@@ -1,0 +1,9 @@
+.container-timeline {
+  text-align: center;
+}
+
+.time {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
