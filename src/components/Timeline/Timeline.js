@@ -21,10 +21,10 @@ export default function OutlinedTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography component="span" className="time">
+            <Typography component="span" className="time gray-text">
               Jan 2020 - May 2020
             </Typography>
-            <Typography>Software Engineering Co-op at Siemens</Typography>
+            <Typography className="gray-text">Software Engineering Co-op at Siemens</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -34,10 +34,10 @@ export default function OutlinedTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography component="span" className="time">
+              <Typography component="span" className="time gray-text">
                 Aug 2020 - Jan 2021
               </Typography>
-              <Typography>Software Engineering Co-op at Siemens</Typography>
+              <Typography className="gray-text">Software Engineering Co-op at Siemens</Typography>
             </TimelineContent>
           </TimelineContent>
         </TimelineItem>
@@ -48,10 +48,10 @@ export default function OutlinedTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography component="span" className="time">
+              <Typography component="span" className="time gray-text">
                 May 2021 - Aug 2021
               </Typography>
-              <Typography>Software Developer Co-op at Blubrry Podcasting</Typography>
+              <Typography className="gray-text">Software Developer Co-op at Blubrry Podcasting</Typography>
             </TimelineContent>
           </TimelineContent>
         </TimelineItem>
@@ -62,10 +62,10 @@ export default function OutlinedTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography component="span" className="time">
+              <Typography component="span" className="time gray-text">
                 Jan 2022 - Apr 2022
               </Typography>
-              <Typography>Software Developer Co-op at Blubrry Podcasting</Typography>
+              <Typography className="gray-text">Software Developer Co-op at Blubrry Podcasting</Typography>
             </TimelineContent>
           </TimelineContent>
         </TimelineItem>
@@ -76,10 +76,10 @@ export default function OutlinedTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography component="span" className="time">
+              <Typography component="span" className="time gray-text">
                 May 2022 - Aug 2022
               </Typography>
-              <Typography>Software Engineering Co-op at TENET3</Typography>
+              <Typography className="gray-text">Software Engineering Co-op at TENET3</Typography>
             </TimelineContent>
           </TimelineContent>
         </TimelineItem>

@@ -5,6 +5,7 @@ import Mode from "../../components/Mode/Mode";
 import Header from '../../components/Header/Header';
 import { About } from '../../components/About/About'
 import OutlinedTimeline from '../../components/Timeline/Timeline';
+import ProjectCards from '../../components/ProjectCards/ProjectCards'
 import Footer from "../../components/Footer/Footer";
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
       <Header />
       <About />
       <OutlinedTimeline />
+      <ProjectCards />
       <Footer />
     </div>
   );
