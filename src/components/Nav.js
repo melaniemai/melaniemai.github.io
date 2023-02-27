@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   Box,
   Container,
+  Grid,
   AppBar,
   Toolbar,
   IconButton,
@@ -47,8 +48,8 @@ const Nav = (props) => {
   const theme = useTheme()
 
   return (
-    <>
-    <ElevationScroll {...props}>
+    <Grid container>
+      <ElevationScroll {...props}>
         <AppBar>
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ fontFamily: "Work Sans", }}>
@@ -97,7 +98,7 @@ const Nav = (props) => {
         </AppBar>
       </ElevationScroll>
       <Toolbar />
-    </>
+    </Grid>
   );
 }
 

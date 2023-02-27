@@ -9,8 +9,10 @@ const App = () => {
   const theme = useTheme()
 
   return (
-    <Grid container>
-      <Content />
+    <Grid container direction={"column"}>
+      <Grid item>
+        <Content />
+      </Grid>
     </Grid>
   );
 }
