@@ -1,23 +1,16 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Box,
-  Container,
   Grid,
   AppBar,
   Toolbar,
-  IconButton,
   Typography,
-  Button,
   useScrollTrigger,
-  useTheme,
   Link,
   List,
   ListItem,
   ListItemButton,
 } from '@mui/material'
-
-const pages = ["Home", "About", "Projects", "Contact"]
 
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -45,10 +38,8 @@ ElevationScroll.propTypes = {
 };
 
 const Nav = (props) => {
-  const theme = useTheme()
-
   return (
-    <Grid container>
+    <Grid container className='fromNav'>
       <ElevationScroll {...props}>
         <AppBar>
           <Toolbar>

@@ -1,19 +1,21 @@
 import {
   Grid,
-  useTheme,
+  Container,
 } from '@mui/material'
 
-import Content from './components/Content';
+import Nav from './components/Nav';
+import Content from './components/Content/Content';
+import Footer from './components/Footer';
 
 const App = () => {
-  const theme = useTheme()
-
   return (
-    <Grid container direction={"column"}>
-      <Grid item>
+    <>
+      <Container className="fromApp" maxWidth={false}>
+        <Nav />
         <Content />
-      </Grid>
-    </Grid>
+        <Footer />
+      </Container>
+    </>
   );
 }
 

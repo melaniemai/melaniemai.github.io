@@ -14,9 +14,6 @@ const theme = createTheme({
       secondary: "#444235",
     }
   },
-  typography: {
-    // fontFamily: ["Playfair Display"]
-  },
   components: {
     MuiAppBar: {
       styleOverrides: {
