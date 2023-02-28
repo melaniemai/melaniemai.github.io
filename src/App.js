@@ -11,9 +11,9 @@ const App = () => {
   return (
     <>
       <Container className="fromApp" maxWidth={false}>
-        <Nav />
-        <About />
-        {/* <Content /> */}
+        {/* <Nav /> */}
+        {/* <About /> */}
+        <Content />
         <Footer />
       </Container>
     </>

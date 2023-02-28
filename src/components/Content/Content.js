@@ -4,12 +4,18 @@ import {
   Typography,
   Link,
   useTheme,
+  Toolbar,
 } from '@mui/material'
 import {
   ArrowOutward,
 } from '@mui/icons-material'
+import Nav from '../Nav';
 
 import './Content.css';
+
+const PAGE_WORK = 0
+const PAGE_ABOUT = 1
+const PAGE_CONTACT = 2
 
 const Coop = () => {
   const theme = useTheme();
@@ -187,52 +193,30 @@ const Content = () => {
   const theme = useTheme()
 
   return (
-    <Box className='fromContent' sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column',}}>
-      <Typography 
-        className="title" 
-        sx={{ 
-          fontFamily: "Playfair Display", 
-          fontSize: "2.5vw", 
-          fontStyle: "italic",
-        }}
-      >
-        Things I've worked on
-      </Typography>
-      {works.map((work) => (
-        <>
-          <Divider 
-            className="divider" 
-            sx={{ 
-              backgroundColor: theme.palette.text.secondary, 
-              height: "0.1vw", 
-              my: "1vw", 
-            }} 
-          />
-          <Box sx={{ display: "flex", direction: "row", flexWrap: "wrap", my: "15px",}}>
-            <Typography 
+    <>
+      <Nav />
+      <Box className='fromContent' sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column',}}>
+        <Typography 
+          className="title" 
+          sx={{ 
+            fontFamily: "Playfair Display", 
+            fontSize: "2.5vw", 
+            fontStyle: "italic",
+          }}
+        >
+          Things I've worked on
+        </Typography>
+        {works.map((work) => (
+          <>
+            <Divider 
+              className="divider" 
               sx={{ 
-                fontFamily: "Work Sans", 
-                fontStyle: "italic", 
-                fontSize: "3vw", 
-                minWidth: "4vw", 
-                marginTop: "-1.25vw", 
-                alignSelf: "flex-start"
-              }}
-            >
-              ({work.id})
-            </Typography>
-            <Typography 
-              className="worktitle" 
-              sx={{ 
-                fontFamily: "Work Sans",
-                fontSize: "8vw", 
-                fontWeight: "700", 
-                letterSpacing: "-.035em", 
-              }}
-            >
-              {work.title}
-            </Typography>
-            <Box sx={{ display: "flex", direction: "row", marginLeft: "auto" }}>
+                backgroundColor: theme.palette.text.secondary, 
+                height: "0.1vw", 
+                my: "1vw", 
+              }} 
+            />
+            <Box sx={{ display: "flex", direction: "row", flexWrap: "wrap", my: "15px",}}>
               <Typography 
                 sx={{ 
                   fontFamily: "Work Sans", 
@@ -240,27 +224,52 @@ const Content = () => {
                   fontSize: "3vw", 
                   minWidth: "4vw", 
                   marginTop: "-1.25vw", 
-                  alignSelf: "flex-start" 
+                  alignSelf: "flex-start"
                 }}
               >
-                {work.year}
+                ({work.id})
               </Typography>
-              <Link 
-                href={work.url} 
-                underline="hover" 
+              <Typography 
+                className="worktitle" 
                 sx={{ 
-                  alignSelf: "flex-start", 
-                  justifyContent: "flex-end"
+                  fontFamily: "Work Sans",
+                  fontSize: "8vw", 
+                  fontWeight: "700", 
+                  letterSpacing: "-.035em", 
                 }}
               >
-                <ArrowOutward className='arrowicon' sx={{ fontSize: "3vw",  minWidth: "4vw", }} />
-              </Link>
+                {work.title}
+              </Typography>
+              <Box sx={{ display: "flex", direction: "row", marginLeft: "auto" }}>
+                <Typography 
+                  sx={{ 
+                    fontFamily: "Work Sans", 
+                    fontStyle: "italic", 
+                    fontSize: "3vw", 
+                    minWidth: "4vw", 
+                    marginTop: "-1.25vw", 
+                    alignSelf: "flex-start" 
+                  }}
+                >
+                  {work.year}
+                </Typography>
+                <Link 
+                  href={work.url} 
+                  underline="hover" 
+                  sx={{ 
+                    alignSelf: "flex-start", 
+                    justifyContent: "flex-end"
+                  }}
+                >
+                  <ArrowOutward className='arrowicon' sx={{ fontSize: "3vw",  minWidth: "4vw", }} />
+                </Link>
+              </Box>
             </Box>
-          </Box>
-        </>
-      ))}
-      <Coop />
-    </Box>
+          </>
+        ))}
+        <Coop />
+      </Box>
+    </>
   );
 };
 
