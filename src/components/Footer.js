@@ -16,6 +16,7 @@ function Copyright() {
       sx={{ 
         color: "#fff",
         fontSize: { xs: "0.8rem", md: "1rem" },
+        fontFamily: "Work Sans",
       }}
     > 
       {'© '}
