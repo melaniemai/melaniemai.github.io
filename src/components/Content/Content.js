@@ -1,33 +1,156 @@
 import {
   Box,
   Divider,
-  Container,
-  Grid,
   Typography,
   Link,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  Stack,
-  Paper,
   useTheme,
 } from '@mui/material'
 import {
   ArrowOutward,
 } from '@mui/icons-material'
-import { styled } from '@mui/material/styles';
-
 
 import './Content.css';
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  color: theme.palette.text.secondary,
-}));
+const Coop = () => {
+  const theme = useTheme();
+  const coops = [
+    {
+      id: 1,
+      title: "Software Eng. Intern",
+      company: "TENET3",
+      location: "Dayton, OH",
+      date: "May - Aug '22",
+      url: "https://www.tenet3.com/",
+    },
+    {
+      id: 2,
+      title: "Software Dev. Co-op",
+      company: "Blubrry Podcasting",
+      location: "Columbus, OH",
+      date: "Jan - Apr '22",
+      url: "https://www.blubrry.com/",
+    },
+    {
+      id: 3,
+      title: "Software Dev. Co-op",
+      company: "Blubrry Podcasting",
+      location: "Columbus, OH",
+      date: "May - Aug '21",
+      url: "https://www.blubrry.com/",
+    },
+    {
+      id: 4,
+      title: "Software Eng. Co-op",
+      company: "Siemens",
+      location: "Milford, OH",
+      date: "Aug '20 - Jan '21",
+      url: "https://www.siemens.com/us/en/home.html",
+    },
+    {
+      id: 5,
+      title: "Software Eng. Co-op",
+      company: "Siemens",
+      location: "Milford, OH",
+      date: "Jan - May '20",
+      url: "https://www.siemens.com/us/en/home.html",
+    },
+  ]
+
+  return (
+    <Box className='fromCoop' my={7} sx={{ display: 'flex', flexDirection: 'column',}}>
+      <Typography 
+        className="title" 
+        sx={{ 
+          fontFamily: "Playfair Display", 
+          fontSize: "2.5vw", 
+          fontStyle: "italic",
+          color: theme.palette.text.secondary,
+        }}
+      >
+        Places I've Interned At
+      </Typography>
+      {coops.map((coop) => (
+        <>
+          <Divider 
+            className="divider" 
+            sx={{ 
+              backgroundColor: "#fff", 
+              height: "0.1vw", 
+              my: "1vw", 
+            }} 
+          />
+          <Box sx={{ display: "flex", direction: "row", flexWrap: "wrap", my: "15px",}}>
+            <Typography 
+              sx={{ 
+                fontFamily: "Work Sans", 
+                fontStyle: "italic", 
+                color: theme.palette.text.secondary,
+                fontSize: "3vw", 
+                minWidth: "4vw", 
+                marginTop: "-1.25vw", 
+                alignSelf: "flex-start"
+              }}
+            >
+              ({coop.id})
+            </Typography>
+            <Typography 
+              className="worktitle" 
+              sx={{ 
+                fontFamily: "Work Sans",
+                fontSize: "6vw", 
+                fontWeight: "700", 
+                letterSpacing: "-.035em", 
+                color: theme.palette.text.secondary,
+              }}
+            >
+              {coop.title}
+            </Typography>
+            <Box sx={{ display: "flex", direction: "row", marginLeft: "auto" }}>
+              <Typography 
+                sx={{ 
+                  fontFamily: "Work Sans", 
+                  fontStyle: "italic", 
+                  fontSize: "3vw", 
+                  minWidth: "4vw", 
+                  marginTop: "-1.25vw", 
+                  alignSelf: "flex-start", 
+                  color: theme.palette.text.secondary,
+                }}
+              >
+                {coop.date}
+              </Typography>
+              <Link 
+                href={coop.url} 
+                underline="hover" 
+                sx={{ 
+                  alignSelf: "flex-start", 
+                  justifyContent: "flex-end"
+                }}
+              >
+                <ArrowOutward className='arrowiconCoop' sx={{ fontSize: "2vw",  minWidth: "4vw", }} />
+              </Link>
+            </Box>
+            <Box sx={{ display: "flex", direction: "row", marginRight: "auto" }}>
+              <Typography 
+                className="workcompany" 
+                margin={"0 4vw"}
+                sx={{ 
+                  fontFamily: "Work Sans",
+                  fontSize: "3vw", 
+                  fontWeight: "700", 
+                  letterSpacing: "-.035em", 
+                  color: theme.palette.text.primary,
+                }}
+              >
+                {coop.company}
+              </Typography>
+            </Box>
+          </Box>
+        </>
+      ))}
+    </Box>
+  );
+}
 
 const Content = () => {
   const works = [
@@ -104,7 +227,7 @@ const Content = () => {
                 fontFamily: "Work Sans",
                 fontSize: "8vw", 
                 fontWeight: "700", 
-                letterSpacing: "-.025em", 
+                letterSpacing: "-.035em", 
               }}
             >
               {work.title}
@@ -130,12 +253,13 @@ const Content = () => {
                   justifyContent: "flex-end"
                 }}
               >
-                <ArrowOutward className='arrowicon' sx={{ fontSize: "4vw",  minWidth: "4vw", }} />
+                <ArrowOutward className='arrowicon' sx={{ fontSize: "3vw",  minWidth: "4vw", }} />
               </Link>
             </Box>
           </Box>
         </>
       ))}
+      <Coop />
     </Box>
   );
 };
