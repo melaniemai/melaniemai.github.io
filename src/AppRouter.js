@@ -1,17 +1,17 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Work from "./components/Content/Work";
 import About from "./components/About";
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/" element={<Work />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" exact element={<Work />} />
+        <Route path="/about" exact element={<About />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
