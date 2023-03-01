@@ -5,9 +5,9 @@ import {
 import AppRouter from './AppRouter';
 
 import Nav from './components/Nav';
-import Content from './components/Content/Work';
+// import Content from './components/Content/Work';
 import Footer from './components/Footer';
-import About from './components/About';
+// import About from './components/About';
 
 const App = () => {
   return (
