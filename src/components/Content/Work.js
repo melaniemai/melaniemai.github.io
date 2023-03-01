@@ -11,11 +11,10 @@ import {
 } from '@mui/icons-material'
 import Nav from '../Nav';
 
-import './Content.css';
+import './Work.css';
 
 const PAGE_WORK = 0
 const PAGE_ABOUT = 1
-const PAGE_CONTACT = 2
 
 const Coop = () => {
   const theme = useTheme();
@@ -158,7 +157,7 @@ const Coop = () => {
   );
 }
 
-const Content = () => {
+const Work = () => {
   const works = [
     {
       id: 1,
@@ -194,7 +193,6 @@ const Content = () => {
 
   return (
     <>
-      <Nav />
       <Box className='fromContent' sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column',}}>
         <Typography 
           className="title" 
@@ -273,4 +271,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Work;

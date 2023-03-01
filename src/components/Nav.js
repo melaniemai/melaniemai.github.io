@@ -49,25 +49,30 @@ const Nav = (props) => {
             <List sx={{ marginLeft: "auto", display: "flex", direction: "row", }}> 
               <ListItem disablePadding >
                 <ListItemButton >
-                  <Typography 
-                    variant="" 
+                  <Link 
+                    href="/" 
                     sx={{ 
                       fontFamily: "Work Sans", 
                       fontSize: { xs: "0.8rem", md: "1rem" },
+                      color: "#fff",
+                      textDecoration: "none",
                     }}>
                       WORKS
-                  </Typography>
+                  </Link>
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton>
-                  <Typography 
+                  <Link 
+                    href="/about"
                     sx={{ 
                       fontFamily: "Work Sans", 
                       fontSize: { xs: "0.8rem", md: "1rem" }, 
+                      color: "#fff",
+                      textDecoration: "none",
                     }}>
                       ABOUT
-                  </Typography>
+                  </Link>
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
@@ -79,6 +84,7 @@ const Nav = (props) => {
                       fontFamily: "Work Sans", 
                       fontSize: { xs: "0.8rem", md: "1rem" },
                       color: "#fff",
+                      textDecoration: "none",
                     }}>
                       CONTACT
                   </Link>
