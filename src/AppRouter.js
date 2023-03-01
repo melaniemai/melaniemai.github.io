@@ -6,7 +6,7 @@ import About from "./components/About";
 
 function AppRouter() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL + "/"}>
       <Routes>
         <Route path="/" exact element={<Work />} />
         <Route path="/about" exact element={<About />} />
