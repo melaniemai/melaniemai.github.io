@@ -15,8 +15,9 @@ const App = () => {
       <Container className="fromApp" maxWidth={false}>
         <Nav />
         <AppRouter />
-        <Footer />
       </Container>
+      <Footer />
+
     </>
   );
 }
