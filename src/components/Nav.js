@@ -50,7 +50,7 @@ const Nav = (props) => {
               <ListItem disablePadding >
                 <ListItemButton >
                   <Link 
-                    href="/" 
+                    href="/#" 
                     sx={{ 
                       fontFamily: "Work Sans", 
                       fontSize: { xs: "0.8rem", md: "1rem" },
@@ -64,7 +64,7 @@ const Nav = (props) => {
               <ListItem disablePadding>
                 <ListItemButton>
                   <Link 
-                    href="/about"
+                    href="/#/about"
                     sx={{ 
                       fontFamily: "Work Sans", 
                       fontSize: { xs: "0.8rem", md: "1rem" }, 
