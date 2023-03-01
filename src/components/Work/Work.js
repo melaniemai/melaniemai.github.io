@@ -164,7 +164,7 @@ const Work = () => {
       title: "DigBizCard",
       description: "A small and simple digital business card.",
       year: "2023",
-      url: "https://github.com/melaniemai/digbizcard",
+      url: "/digbizcard",
     },
     {
       id: 2,
