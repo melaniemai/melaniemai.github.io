@@ -10,8 +10,8 @@ function AppRouter() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/#" exact element={<Work />} />
-        <Route path="/#/about" exact element={<About />} />
+        <Route path="/" exact element={<Work />} />
+        <Route path="/about" exact element={<About />} />
       </Routes>
     </HashRouter>
   );
