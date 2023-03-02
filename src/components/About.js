@@ -52,7 +52,6 @@ const About = () => {
           }}
         >
           When I'm not working, I'm interested in gaming, baking, listening to music, coffee drinking, cafe hopping, and exploring new places.
-          I'm also always looking for opportunities to learn and grow, so please feel free to reach out!
         </Typography>
         <Typography
           my={3}

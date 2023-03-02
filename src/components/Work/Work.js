@@ -72,7 +72,7 @@ const Coop = () => {
           color: theme.palette.text.secondary,
         }}
       >
-        Places I've Interned At
+        Places I've interned at
       </Typography>
       {coops.map((coop) => (
         <>
