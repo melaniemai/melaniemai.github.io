@@ -44,7 +44,15 @@ const Nav = (props) => {
         <AppBar>
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ fontFamily: "Work Sans", }}>
-              M99
+              <Link 
+                    href="/#" 
+                    sx={{ 
+                      fontFamily: "Work Sans", 
+                      color: "#fff",
+                      textDecoration: "none",
+                    }}>
+                      M99
+                  </Link>
             </Typography>
             <List sx={{ marginLeft: "auto", display: "flex", direction: "row", }}> 
               <ListItem disablePadding >

@@ -4,17 +4,12 @@ import {
   Typography,
   Link,
   useTheme,
-  Toolbar,
 } from '@mui/material'
 import {
   ArrowOutward,
 } from '@mui/icons-material'
-import Nav from '../Nav';
 
 import './Work.css';
-
-const PAGE_WORK = 0
-const PAGE_ABOUT = 1
 
 const Coop = () => {
   const theme = useTheme();
@@ -161,27 +156,34 @@ const Work = () => {
   const works = [
     {
       id: 1,
+      title: "PAPER",
+      description: "A Senior Capstone project created to provide a better solution for paper exams.",
+      year: "2023",
+      url: "https://github.com/rymandn/SeniorCapstoneProject-CS5001",
+    },
+    {
+      id: 2,
       title: "DigBizCard",
       description: "A small and simple digital business card.",
       year: "2023",
       url: "/digbizcard",
     },
     {
-      id: 2,
+      id: 3,
       title: "StuDB",
       description: "Student database application managing student enrollments and balances.",
       year: "2021",
       url: "https://github.com/melaniemai/student_database_app",
     },
     {
-      id: 3,
+      id: 4,
       title: "New Bank",
       description: "A bank account application that handles new customer bank account requests.",
       year: "2021",
       url: "https://github.com/melaniemai/new_bank_acc_app",
     },
     {
-      id: 4,
+      id: 5,
       title: "Email Admin",
       description: "Email administration application creates email accounts for new hires at a company.",
       year: "2020",
