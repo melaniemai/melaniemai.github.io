@@ -30,7 +30,7 @@ const About = () => {
           }}
         >
           I'm currently a 5th year CS student based in the Cincinnati area. 
-          After graduating (very soon btw), I'll be working at <a href="https://www.uber.com/us/en/" target="_blank" rel="noreferrer">TENET3</a> as a Software Engineer on the Software Engineering Group. 
+          After graduating (very soon btw), I'll be working at <a href="https://tenet3.com/index.html" target="_blank" rel="noreferrer">TENET3, LLC</a> as a Software Engineer on the Software Engineering Group. 
         </Typography>
         <Typography
           my={3}
