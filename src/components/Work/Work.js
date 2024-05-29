@@ -16,6 +16,14 @@ const Coop = () => {
   const coops = [
     {
       id: 1,
+      title: "Software Engineer",
+      company: "TENET3",
+      location: "Dayton, OH",
+      date: "July 2023 - Present",
+      url: "https://www.tenet3.com/",
+    },
+    {
+      id: 2,
       title: "Software Eng. Intern",
       company: "TENET3",
       location: "Dayton, OH",
@@ -23,7 +31,7 @@ const Coop = () => {
       url: "https://www.tenet3.com/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Software Dev. Co-op",
       company: "Blubrry Podcasting",
       location: "Columbus, OH",
@@ -31,7 +39,7 @@ const Coop = () => {
       url: "https://www.blubrry.com/",
     },
     {
-      id: 3,
+      id: 4,
       title: "Software Dev. Co-op",
       company: "Blubrry Podcasting",
       location: "Columbus, OH",
@@ -39,7 +47,7 @@ const Coop = () => {
       url: "https://www.blubrry.com/",
     },
     {
-      id: 4,
+      id: 5,
       title: "Software Eng. Co-op",
       company: "Siemens",
       location: "Milford, OH",
@@ -47,7 +55,7 @@ const Coop = () => {
       url: "https://www.siemens.com/us/en/home.html",
     },
     {
-      id: 5,
+      id: 6,
       title: "Software Eng. Co-op",
       company: "Siemens",
       location: "Milford, OH",
@@ -67,7 +75,7 @@ const Coop = () => {
           color: theme.palette.text.secondary,
         }}
       >
-        Places I've interned at
+        Places I've interned / worked at
       </Typography>
       {coops.map((coop) => (
         <>
@@ -156,38 +164,38 @@ const Work = () => {
   const works = [
     {
       id: 1,
+      title: "Leaf",
+      description: "A starting project working with React components for Leaflet maps..",
+      year: "2024",
+      url: "https://github.com/melaniemai/leafmap",
+    },
+    {
+      id: 2,
       title: "PAPER",
       description: "A Senior Capstone project created to provide a better solution for paper exams.",
       year: "2023",
       url: "https://github.com/rymandn/SeniorCapstoneProject-CS5001",
     },
     {
-      id: 2,
+      id: 3,
       title: "DigBizCard",
       description: "A small and simple digital business card.",
       year: "2023",
       url: "/digbizcard",
     },
     {
-      id: 3,
+      id: 4,
       title: "StuDB",
       description: "Student database application managing student enrollments and balances.",
       year: "2021",
       url: "https://github.com/melaniemai/student_database_app",
     },
     {
-      id: 4,
-      title: "New Bank",
-      description: "A bank account application that handles new customer bank account requests.",
-      year: "2021",
-      url: "https://github.com/melaniemai/new_bank_acc_app",
-    },
-    {
       id: 5,
-      title: "Email Admin",
-      description: "Email administration application creates email accounts for new hires at a company.",
-      year: "2020",
-      url: "https://github.com/melaniemai/email_admin_app",
+      title: "View more projects...",
+      description: "-",
+      year: "-",
+      url: "https://github.com/melaniemai",
     },
   ]
   

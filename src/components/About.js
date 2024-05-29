@@ -29,8 +29,7 @@ const About = () => {
             fontFamily: "Playfair Display",
           }}
         >
-          I'm currently a 5th year CS student based in the Cincinnati area. 
-          After graduating (very soon btw), I'll be working at <a href="https://tenet3.com/index.html" target="_blank" rel="noreferrer">TENET3, LLC</a> as a Software Engineer on the Software Engineering Group. 
+          Software Engineer at <a href="https://tenet3.com/index.html" target="_blank" rel="noreferrer">TENET3, LLC</a>. 
         </Typography>
         <Typography
           my={3}
@@ -51,7 +50,7 @@ const About = () => {
             fontFamily: "Playfair Display",
           }}
         >
-          When I'm not working, I'm interested in gaming, baking, listening to music, coffee drinking, cafe hopping, and exploring new places.
+          When I'm not working, I'm interested in gaming, baking, listening to music, coffee drinking, cafe hopping, sewing, and exploring new places.
         </Typography>
         <Typography
           my={3}
