@@ -167,7 +167,7 @@ const Work = () => {
       title: "Leaf",
       description: "A starting project working with React components for Leaflet maps..",
       year: "2024",
-      url: "https://github.com/melaniemai/leafmap",
+      url: "/leafmap",
     },
     {
       id: 2,
